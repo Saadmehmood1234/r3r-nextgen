@@ -14,12 +14,12 @@ export function AboutSection() {
         {/* About images */}
         <Reveal x={-32} y={0} className="min-w-0">
           <Media
-            src="about1.png"
+            src="home/about1.png"
             alt="Child building with wooden toy trains"
             className="xl:block lg:hidden block aspect-2/1 lg:rounded-r-2xl"
           />
           <Media
-            src="about.png"
+            src="home/about.png"
             alt="Child building with wooden toy trains"
             className="xl:hidden lg:block hidden aspect-4/3 rounded-r-2xl"
           />
