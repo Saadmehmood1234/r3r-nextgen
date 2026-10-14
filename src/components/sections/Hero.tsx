@@ -21,9 +21,7 @@ export function Hero() {
           <div className="max-w-xl">
             <h1 className="text-4xl font-extrabold leading-tight md:text-ink text-leaf-soft md:text-6xl">
               Crafting <span className="block">Sustainable Play</span>{" "}
-              <span className="text-ember">
-                for the Next Generation.
-              </span>
+              <span className="text-ember">for the Next Generation.</span>
             </h1>
 
             <p className="mt-5 max-w-md text-white md:text-black">
@@ -34,7 +32,10 @@ export function Hero() {
 
             <div className="mt-7 flex flex-wrap gap-3">
               <Button href="/products">Explore Our Products</Button>
-              <Button href="/contact" variant="light" arrow={false}>
+              <Button className="lg:block hidden" href="/contact" variant="light-outline" arrow={false}>
+                Partner With Us
+              </Button>
+              <Button className="lg:hidden block" href="/contact" variant="soft-primary" arrow={false}>
                 Partner With Us
               </Button>
             </div>
@@ -46,7 +47,7 @@ export function Hero() {
         {heroFeatures.map((f) => (
           <div key={f.title} className="flex items-center gap-3">
             <span className="grid size-11 shrink-0 place-items-center rounded-full bg-leaf-soft text-leaf">
-              <Icon name={f.icon} size={22} />
+              <Icon name={f.icon}  size={28} />
             </span>
             <div>
               <p className="text-sm font-bold">{f.title}</p>

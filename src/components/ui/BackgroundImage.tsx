@@ -20,7 +20,7 @@ type Props = {
 
 const overlays: Record<Overlay, string> = {
   none: "",
-  dark: "bg-black",
+  dark: "bg-black/45",
   light: "bg-white/60",
   left: "bg-linear-to-r from-leaf-dark/85 via-leaf-dark/40 to-transparent",
   "light-left": "bg-linear-to-r from-cream/95 via-cream/70 to-transparent",
@@ -28,7 +28,7 @@ const overlays: Record<Overlay, string> = {
 
 const mobileOverlays: Record<Overlay, string> = {
   none: "bg-transparent",
-  dark: "bg-black/45 md:bg-transparent",
+  dark: "bg-black/65 md:bg-transparent",
   light: "bg-white/60 md:bg-transparent",
   left: "bg-linear-to-r from-leaf-dark/85 via-leaf-dark/40 to-transparent md:bg-none",
   "light-left":

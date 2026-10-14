@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <BackgroundImage
       as="footer"
-      src="footer-bg.png"
+      src="home/footer-bg.png"
       alt=""
       overlay="dark"
       className="bg-leaf-dark text-white/80"

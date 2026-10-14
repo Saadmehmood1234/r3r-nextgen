@@ -2,26 +2,28 @@
 
 /* ---- R3R NextGen theme: edit tokens here ---- */
 @theme {
---color-cream: #fdf8f0;
---color-sand: #f6efe2;
+  --color-cream: #fdf8f0;
+  --color-sand: #f6efe2;
 
---color-leaf: #2f6b3a;
---color-leaf-dark: #17361f;
---color-leaf-soft: #e6f0df;
+  --color-leaf: #2f6b3a;
+  --color-leaf-dark: #17361f;
+  --color-leaf-soft: #e6f0df;
 
---color-red-soft: #fff1f0;
---color-ember: #f26a21;
---color-ember-dark: #d9560f;
---color-ember-soft: #ffeadb;
+  --color-red-soft: #fff1f0;
 
---color-ink: #1f2a22;
---color-muted: #5f6b62;
+  /* Brand orange */
+  --color-ember: #FC4D02;
+  --color-ember-dark: #D94200;
+  --color-ember-soft: #FFE8DE;
 
---font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
---font-display: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #1f2a22;
+  --color-muted: #5f6b62;
 
---radius-card: 1rem;
---shadow-soft: 0 8px 30px -12px rgb(60 40 10 / 0.25);
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1rem;
+  --shadow-soft: 0 8px 30px -12px rgb(60 40 10 / 0.25);
 }
 
 html {
@@ -46,17 +48,69 @@ h3 {
 @utility section-y {
   @apply py-8 md:py-14;
 }
+/* Base */
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember;
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember disabled:pointer-events-none disabled:opacity-50;
 }
+
+/* Primary: orange background */
 @utility btn-primary {
   @apply btn bg-ember text-white hover:bg-ember-dark;
 }
+
+/* Orange outline */
 @utility btn-outline {
-  @apply btn border border-ember text-ember hover:bg-ember hover:text-white;
+  @apply btn border border-ember bg-transparent text-ember hover:bg-ember hover:text-white;
 }
+
+/* White background */
 @utility btn-light {
   @apply btn bg-white text-leaf-dark hover:bg-sand;
+}
+
+/* White background with orange border */
+@utility btn-light-outline {
+  @apply btn border border-ember bg-white text-leaf-dark hover:bg-ember-soft;
+}
+
+/* Dark green background */
+@utility btn-dark {
+  @apply btn bg-leaf-dark text-white hover:bg-leaf;
+}
+
+/* Dark green outline */
+@utility btn-dark-outline {
+  @apply btn border border-leaf-dark bg-transparent text-leaf-dark hover:bg-leaf-dark hover:text-white;
+}
+
+/* Soft green background */
+@utility btn-soft {
+  @apply btn bg-leaf-soft text-leaf-dark hover:bg-[#d5e7ce];
+}
+
+/* Subtle orange background */
+@utility btn-soft-primary {
+  @apply btn bg-ember-soft text-ember-dark hover:bg-[#ffddc5];
+}
+
+/* Muted neutral background */
+@utility btn-muted {
+  @apply btn bg-sand text-ink hover:bg-[#eee4d3];
+}
+
+/* Transparent button for dark backgrounds */
+@utility btn-on-dark {
+  @apply btn bg-white/10 text-white hover:bg-white/20;
+}
+
+/* White outline for dark/image backgrounds */
+@utility btn-on-dark-outline {
+  @apply btn border border-white/70 bg-transparent text-white hover:bg-white hover:text-leaf-dark;
+}
+
+/* Low-emphasis transparent button */
+@utility btn-ghost {
+  @apply btn bg-transparent text-leaf-dark hover:bg-leaf-soft;
 }
 @utility card {
   @apply rounded-(--radius-card) bg-white shadow-soft;
