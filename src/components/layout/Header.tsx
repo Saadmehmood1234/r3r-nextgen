@@ -11,7 +11,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 border-b border-sand bg-cream/95 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between gap-4">
+      <div className="container-page flex h-20 items-center justify-between gap-4">
         <div className="flex justify-start">
           <Logo image="/images/logo/logo.png" alt="Eddems" className="w-32" />
         </div>

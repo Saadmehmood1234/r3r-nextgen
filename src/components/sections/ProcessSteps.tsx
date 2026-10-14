@@ -8,7 +8,7 @@ import { process } from "@/lib/site";
 
 export function ProcessSteps() {
   return (
-    <section className="section-y relative isolate overflow-hidden lg:pb-0 border-b border-orange-200/60">
+    <section className="section-y relative isolate overflow-hidden lg:pb-0">
       <Image
         src="/images/process-bg.png"
         alt=""
