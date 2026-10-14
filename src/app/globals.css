@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* ---- R3R NextGen theme: edit tokens here ---- */
+@theme {
+--color-cream: #fdf8f0;
+--color-sand: #f6efe2;
+
+--color-leaf: #2f6b3a;
+--color-leaf-dark: #17361f;
+--color-leaf-soft: #e6f0df;
+
+--color-red-soft: #fff1f0;
+--color-ember: #f26a21;
+--color-ember-dark: #d9560f;
+--color-ember-soft: #ffeadb;
+
+--color-ink: #1f2a22;
+--color-muted: #5f6b62;
+
+--font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+--font-display: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+
+--radius-card: 1rem;
+--shadow-soft: 0 8px 30px -12px rgb(60 40 10 / 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+/* Tailwind v4: reusable classes must be @utility so they can be @apply'd and take variants */
+@utility container-page {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+}
+@utility section-y {
+  @apply py-8 md:py-14;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember;
+}
+@utility btn-primary {
+  @apply btn bg-ember text-white hover:bg-ember-dark;
+}
+@utility btn-outline {
+  @apply btn border border-ember text-ember hover:bg-ember hover:text-white;
+}
+@utility btn-light {
+  @apply btn bg-white text-leaf-dark hover:bg-sand;
+}
+@utility card {
+  @apply rounded-(--radius-card) bg-white shadow-soft;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
