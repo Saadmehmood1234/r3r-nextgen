@@ -13,7 +13,7 @@ export function ProductWorld({ showCta = true }: ProductWorldProps) {
   return (
     <section className="section-y border-b border-pink-200/60 bg-cream">
       <div className="container-page">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-col justify-start gap-4 md:flex-row md:items-end md:justify-between">
           <Reveal y={24} className="min-w-0 flex-1">
             <SectionHeading
               eyebrow="Our Collection"
@@ -23,7 +23,7 @@ export function ProductWorld({ showCta = true }: ProductWorldProps) {
           </Reveal>
 
           {showCta && (
-            <Reveal y={16} delay={0.15}>
+            <Reveal y={16} delay={0.15} className="shrink-0">
               <Button href="/products" variant="outline">
                 Explore All Products
               </Button>

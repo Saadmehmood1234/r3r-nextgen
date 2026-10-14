@@ -89,7 +89,7 @@ export function RevealItem({
 }) {
   return (
     <motion.div
-      className={`flex h-full ${className ?? ""}`}
+      className={className}
       variants={item}
     >
       {children}

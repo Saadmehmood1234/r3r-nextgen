@@ -30,7 +30,7 @@ export function OemSection() {
             </div>
 
             {/* OEM service tiles */}
-            <RevealGroup className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-2 xl:grid-cols-3">
+            <RevealGroup className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
               {oem.map((item) => (
                 <RevealItem key={item.title}>
                   <IconTile

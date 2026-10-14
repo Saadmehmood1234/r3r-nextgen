@@ -16,6 +16,7 @@ type Props = {
   mobileOverlay?: Overlay;
   align?: "start" | "center" | "end";
   as?: "div" | "section" | "footer";
+  imagePosition?: string;
 };
 
 const overlays: Record<Overlay, string> = {
@@ -54,6 +55,7 @@ export function BackgroundImage({
   mobileOverlay,
   align = "start",
   as: Tag = "div",
+  imagePosition = "center",
 }: Props) {
   return (
     <Tag
@@ -78,6 +80,7 @@ export function BackgroundImage({
         sizes={sizes}
         priority={priority}
         aria-hidden={mobileSrc ? true : undefined}
+        style={{ objectPosition: imagePosition }}
         className={`-z-20 object-cover ${mobileSrc ? "hidden md:block" : ""}`}
       />
 

@@ -12,7 +12,6 @@ import { process } from "@/lib/site";
 export function ProcessSteps() {
   return (
     <section className="section-y relative isolate overflow-hidden lg:pb-0">
-      
       <Image
         src="/images/process-bg.png"
         alt=""
@@ -36,10 +35,10 @@ export function ProcessSteps() {
           />
         </Reveal>
 
-        <RevealGroup className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 px-2 sm:grid-cols-4 sm:gap-x-5 sm:gap-y-10 sm:px-4 lg:grid-cols-7 lg:gap-x-3 lg:bg-[#F8F3E7] lg:pb-14">
+        <RevealGroup className="mt-8 grid grid-cols-2 items-stretch gap-x-4 gap-y-8 px-2 sm:grid-cols-4 sm:gap-x-5 sm:gap-y-10 sm:px-4 lg:grid-cols-7 lg:gap-x-3 lg:bg-[#F8F3E7] lg:pb-14">
           {process.map((step, index) => (
-            <RevealItem key={step.title} className="relative min-w-0">
-              <li className="relative flex h-full flex-col items-center gap-3 text-center">
+            <RevealItem key={step.title} className="relative h-full min-w-0">
+              <li className="relative flex h-full w-full flex-col items-center gap-3 text-center">
                 <span className="grid size-14 shrink-0 place-items-center rounded-full border-2 border-leaf/30 bg-white text-leaf shadow-soft sm:size-16 lg:size-20">
                   <Icon
                     name={step.icon}

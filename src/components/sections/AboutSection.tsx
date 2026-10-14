@@ -16,19 +16,12 @@ export function AboutSection() {
           <Media
             src="about1.png"
             alt="Child building with wooden toy trains"
-            className="block aspect-2/1 xl:hidden"
+            className="xl:block lg:hidden block aspect-2/1 lg:rounded-r-2xl"
           />
-
           <Media
             src="about.png"
             alt="Child building with wooden toy trains"
-            className="hidden aspect-4/3 lg:block xl:hidden"
-          />
-
-          <Media
-            src="about1.png"
-            alt="Child building with wooden toy trains"
-            className="hidden aspect-2/1 xl:block"
+            className="xl:hidden lg:block hidden aspect-4/3 rounded-r-2xl"
           />
         </Reveal>
 
@@ -59,8 +52,8 @@ export function AboutSection() {
                 to wooden toys and children&apos;s furniture. Our focus is on
                 creating safe, biodegradable, innovative and screen-free
                 products supported by modern manufacturing practices and
-                stringent quality standards, for families and markets across
-                the world.
+                stringent quality standards, for families and markets across the
+                world.
               </p>
             </Reveal>
 

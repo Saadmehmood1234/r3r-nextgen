@@ -11,18 +11,18 @@ import { mfgPoints } from "@/lib/site";
 export function ManufacturingSection() {
   return (
     <section className="overflow-hidden">
-      <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2 lg:gap-4">
+      <div className="grid grid-cols-1 items-stretch lg:gap-8 lg:grid-cols-2 ">
         <Reveal x={-28} y={0} className="min-w-0">
           <Media
             src="manufacturing1.png"
             alt="Craftsman working in the R3R NextGen workshop"
-            className="block aspect-2/1 lg:hidden xl:block xl:aspect-auto xl:min-h-full"
+            className="block aspect-2/1 lg:hidden xl:block lg:rounded-r-2xl xl:aspect-auto xl:min-h-full"
           />
 
           <Media
             src="manufacturing.png"
             alt="Craftsman working in the R3R NextGen workshop"
-            className="hidden aspect-4/3 lg:block xl:hidden"
+            className="hidden aspect-4/3 lg:block xl:hidden rounded-r-2xl"
           />
         </Reveal>
 
@@ -30,7 +30,7 @@ export function ManufacturingSection() {
         <Reveal
           y={24}
           delay={0.12}
-          className="relative isolate flex min-h-100 min-w-0 flex-col justify-center overflow-hidden px-6 py-10 md:px-12 lg:min-h-0 lg:py-12"
+          className="relative isolate flex min-h-100 min-w-0 flex-col justify-center overflow-hidden lg:px-0 px-6 py-6 lg:min-h-0"
         >
           <Image
             src="/images/home/manufacturing-right.png"

@@ -11,6 +11,7 @@ export function Footer() {
       src="home/footer-bg.png"
       alt=""
       overlay="dark"
+      imagePosition="right center"
       className="bg-leaf-dark text-white/80"
     >
       {/* <div className="absolute inset-0 -z-10 bg-leaf-dark/80" /> */}
@@ -30,7 +31,7 @@ export function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="md:border-l md:border-white/10 md:px-6">
+        <div className="md:border-l pl-3 md:border-white/10 md:px-6">
           <h3 className="mb-3 text-sm font-bold text-white">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             {nav.map((n) => (
@@ -47,7 +48,7 @@ export function Footer() {
         </div>
 
         {/* Products */}
-        <div className="md:border-l md:border-white/10 md:px-6">
+        <div className="md:border-l pl-3 md:border-white/10 md:px-6">
           <h3 className="mb-3 text-sm font-bold text-white">Our Products</h3>
           <ul className="space-y-2 text-sm">
             {products.map((p) => (
@@ -64,7 +65,7 @@ export function Footer() {
         </div>
 
         {/* Contact */}
-        <div className="md:border-l md:border-white/10 md:pl-6">
+        <div className="md:border-l pl-3 md:border-white/10 md:pl-6">
           <h3 className="mb-3 text-sm font-bold text-white">Contact Us</h3>
           <ul className="space-y-3 text-sm">
             <li className="flex gap-2">
