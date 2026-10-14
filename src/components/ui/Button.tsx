@@ -6,6 +6,7 @@ type Props = {
   children: React.ReactNode;
   variant?: "primary" | "outline" | "light";
   arrow?: boolean;
+  className?: string;
 };
 
 const variantClasses = {
@@ -19,9 +20,10 @@ export function Button({
   children,
   variant = "primary",
   arrow = true,
+  className = "",
 }: Props) {
   return (
-    <Link href={href} className={variantClasses[variant]}>
+    <Link href={href} className={`${variantClasses[variant]} ${className}`}>
       {children}
       {arrow && <Icon name="arrow" size={16} />}
     </Link>

@@ -5,29 +5,36 @@ import { heroFeatures } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="bg-cream  border-b border-gray-200/50">
+    <section className="border-b border-orange-200/60 bg-cream">
       <BackgroundImage
-        as="div"
-        src="hero.png"
+        src="home/hero.jpg"
+        mobileSrc="home/hero-mobile.png"
         alt="Child playing with colourful wooden stacking toys"
         overlay="none"
-        mobileOverlay="light"
-        className="min-h-100 lg:min-h-140"
+        mobileOverlay="dark"
+        priority
+        sizes="(max-width: 767px) 0px, 100vw"
+        mobileSizes="(max-width: 767px) 100vw, 0px"
+        className="min-h-100 md:min-h-100 lg:min-h-140"
       >
         <div className="container-page w-full">
           <div className="max-w-xl">
-            <h1 className="text-4xl font-extrabold leading-tight text-ink md:text-6xl">
-              Crafting Sustainable Play{" "}
-              <span className="text-ember">for the Next Generation.</span>
+            <h1 className="text-4xl font-extrabold leading-tight md:text-ink text-leaf-soft md:text-6xl">
+              Crafting <span className="block">Sustainable Play</span>{" "}
+              <span className="text-ember">
+                for the Next Generation.
+              </span>
             </h1>
-            <p className="mt-5 max-w-md text-black">
+
+            <p className="mt-5 max-w-md text-white md:text-black">
               Safe, screen-free and thoughtfully designed wooden toys and
               children&apos;s furniture, created with a focus on sustainability,
               quality and meaningful play.
             </p>
+
             <div className="mt-7 flex flex-wrap gap-3">
               <Button href="/products">Explore Our Products</Button>
-              <Button href="/contact" variant="outline" arrow={false}>
+              <Button href="/contact" variant="light" arrow={false}>
                 Partner With Us
               </Button>
             </div>

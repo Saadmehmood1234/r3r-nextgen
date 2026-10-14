@@ -8,7 +8,7 @@ import { ProductCard } from "../ui/ProductCard";
 
 export function ProductWorld({ showCta = true }: { showCta?: boolean }) {
   return (
-    <section className="section-y bg-cream">
+    <section className="section-y bg-cream border-b border-pink-200/60">
       <div className="container-page">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading

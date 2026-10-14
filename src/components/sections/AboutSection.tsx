@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section className="section-y bg-[#F8F3E9] border-b border-gray-200/50">
+    <section className="section-y bg-[#F8F3E9] border-b border-orange-200/60">
       <div className="grid items-center lg:gap-4 gap-8 grid-cols-1 lg:grid-cols-2">
         <Media
           src="about1.png"

@@ -4,7 +4,7 @@ import { why } from "@/lib/site";
 
 export function WhyChoose() {
   return (
-    <section className="section-y bg-leaf-soft">
+    <section className="section-y bg-leaf-soft border-b border-leaf/10">
       <div className="container-page">
         <div className="grid items-center gap-8 rounded-3xl lg:grid-cols-[1fr_1fr]">
           <SectionHeading

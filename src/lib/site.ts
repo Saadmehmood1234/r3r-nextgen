@@ -26,7 +26,13 @@ export const legal = [
   { label: "Disclaimer", href: "/disclaimer" },
 ];
 
-export type Item = { icon: string; title: string; text?: string };
+export type Item = {
+  icon: string;
+  title: string;
+  text?: string;
+  image?: string;
+  bgColor?: string;
+};
 
 export const heroFeatures: Item[] = [
   {
@@ -130,7 +136,19 @@ export const quality: Item[] = [
 ];
 
 export const markets: Item[] = [
-  { icon: "map", title: "Domestic Supply" },
-  { icon: "building", title: "Bulk & Institutional Supply" },
-  { icon: "globe", title: "Global Markets (Export-Ready)" },
+  {
+    icon: "map",
+    title: "Domestic Supply",
+    image: "/images/home/domestic-supply1.png",
+  },
+  {
+    icon: "building",
+    title: "Bulk & Institutional Supply",
+    image: "/images/home/bulk-supply1.png",
+  },
+  {
+    icon: "globe",
+    title: "Global Markets (Export-Ready)",
+    image: "/images/home/global-market1.png",
+  },
 ];
