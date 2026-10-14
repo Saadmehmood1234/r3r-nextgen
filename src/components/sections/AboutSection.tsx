@@ -6,17 +6,17 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section className="section-y bg-[#F8F3E9] border-b border-orange-200/60">
+    <section className="bg-[#F8F3E9]">
       <div className="grid items-center lg:gap-4 gap-8 grid-cols-1 lg:grid-cols-2">
         <Media
           src="about1.png"
           alt="Child building with wooden toy trains"
-          className="xl:block lg:hidden block aspect-2/1 lg:rounded-r-2xl"
+          className="xl:block lg:hidden block aspect-2/1"
         />
         <Media
           src="about.png"
           alt="Child building with wooden toy trains"
-          className="xl:hidden lg:block hidden aspect-4/3 rounded-r-2xl"
+          className="xl:hidden lg:block hidden aspect-4/3"
         />
         <div className="relative isolate min-w-0 overflow-hidden rounded-3xl">
           <Image

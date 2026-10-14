@@ -5,7 +5,7 @@ import { heroFeatures } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="border-b border-orange-200/60 bg-cream">
+    <section className="bg-cream">
       <BackgroundImage
         src="home/hero.jpg"
         mobileSrc="home/hero-mobile.png"

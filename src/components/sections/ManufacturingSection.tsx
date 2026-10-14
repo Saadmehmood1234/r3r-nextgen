@@ -22,7 +22,6 @@ export function ManufacturingSection() {
           className="hidden aspect-4/3 lg:block xl:hidden"
         />
 
-        {/* Right content and background image */}
         <div className="relative isolate flex min-h-100 min-w-0 flex-col justify-center overflow-hidden px-6 py-10 md:px-12 lg:min-h-0 lg:py-12">
           <Image
             src="/images/home/manufacturing-right.png"
