@@ -18,7 +18,7 @@ export function ProductCard({
   return (
     <Link
       href={href}
-      className="rounded-xl group bg-sand flex h-full flex-col overflow-hidden transition duration-300 hover:-translate-y-1"
+      className="group flex h-full w-full flex-col overflow-hidden rounded-xl bg-sand transition duration-300 hover:-translate-y-1"
     >
       <Media
         src={img}
@@ -33,9 +33,7 @@ export function ProductCard({
             {title}
           </h3>
 
-          <p className="mt-1 line-clamp-2 text-xs text-muted">
-            {text}
-          </p>
+          <p className="mt-1 line-clamp-2 text-xs text-muted">{text}</p>
         </div>
 
         <Icon

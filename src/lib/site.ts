@@ -26,13 +26,12 @@ export const legal = [
   { label: "Disclaimer", href: "/disclaimer" },
 ];
 
-export type Item = {
-  icon: string;
-  title: string;
-  text?: string;
-  image?: string;
-  bgColor?: string;
-};
+  export type Item = {
+    icon: string;
+    title: string;
+    text?: string;
+    bgColor?: string;
+  };
 
 export const heroFeatures: Item[] = [
   {
@@ -135,7 +134,14 @@ export const quality: Item[] = [
   { icon: "heart", title: "Social Impact" },
 ];
 
-export const markets: Item[] = [
+
+export type MarketItem = {
+  icon: string;
+  title: string;
+  image: string;
+};
+
+export const markets: MarketItem[] = [
   {
     icon: "map",
     title: "Domestic Supply",

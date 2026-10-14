@@ -11,7 +11,7 @@ export function IconTile({
   iconBgColor?:string
 }) {
   return (
-    <div className="flex flex-col items-center gap-2 rounded-xl bg-white/60 p-4 text-center">
+    <div className="flex h-full w-full flex-col items-center gap-2 rounded-xl bg-white/60 p-4 text-center">
       <span className={`grid size-11 place-items-center rounded-full ${iconBgColor} text-leaf`}>
         <Icon name={item.icon} size={iconSize} />
       </span>

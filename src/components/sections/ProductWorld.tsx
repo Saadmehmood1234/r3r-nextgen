@@ -1,37 +1,47 @@
-import Link from "next/link";
 import { Button } from "../ui/Button";
-import { Media } from "../ui/Media";
 import { SectionHeading } from "../ui/SectionHeading";
-import { Icon } from "../ui/Icon";
-import { products } from "@/lib/site";
 import { ProductCard } from "../ui/ProductCard";
+import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
-export function ProductWorld({ showCta = true }: { showCta?: boolean }) {
+import { products } from "@/lib/site";
+
+type ProductWorldProps = {
+  showCta?: boolean;
+};
+
+export function ProductWorld({ showCta = true }: ProductWorldProps) {
   return (
-    <section className="section-y bg-cream border-b border-pink-200/60">
+    <section className="section-y border-b border-pink-200/60 bg-cream">
       <div className="container-page">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <SectionHeading
-            eyebrow="Our Collection"
-            title="Our Product World"
-            text="A thoughtfully curated range of wooden toys and children's furniture that inspire learning, creativity and active play."
-          />
+          <Reveal y={24} className="min-w-0 flex-1">
+            <SectionHeading
+              eyebrow="Our Collection"
+              title="Our Product World"
+              text="A thoughtfully curated range of wooden toys and children's furniture that inspire learning, creativity and active play."
+            />
+          </Reveal>
+
           {showCta && (
-            <Button href="/products" variant="outline">
-              Explore All Products
-            </Button>
+            <Reveal y={16} delay={0.15}>
+              <Button href="/products" variant="outline">
+                Explore All Products
+              </Button>
+            </Reveal>
           )}
         </div>
-        <ul className="mt-8 grid items-center lg:grid-cols-5 sm:grid-cols-3 grid-cols-1 gap-4">
-          {products.map((p) => (
-            <li
-              key={p.title}
-              className="w-full"
-            >
-              <ProductCard title={p.title} text={p.text} img={p.img} />
-            </li>
+
+        <RevealGroup className="mt-8 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {products.map((product) => (
+            <RevealItem key={product.title}>
+              <ProductCard
+                title={product.title}
+                text={product.text}
+                img={product.img}
+              />
+            </RevealItem>
           ))}
-        </ul>
+        </RevealGroup>
       </div>
     </section>
   );
