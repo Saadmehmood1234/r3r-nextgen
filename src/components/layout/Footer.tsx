@@ -38,7 +38,7 @@ export function Footer() {
               <li className="flex gap-2">
                 <Icon name="mail" size={16} className="mt-0.5 shrink-0" />
                 <a
-                  className="break-all transition-colors hover:text-white"
+                  className="break-all transition-colors hover:text-ember"
                   href={`mailto:${site.email}`}
                 >
                   {site.email}
@@ -47,7 +47,7 @@ export function Footer() {
               <li className="flex gap-2">
                 <Icon name="phone" size={16} className="mt-0.5 shrink-0" />
                 <a
-                  className="transition-colors hover:text-white"
+                  className="transition-colors hover:text-ember"
                   href={`tel:${site.phone.replace(/\s/g, "")}`}
                 >
                   {site.phone}
@@ -66,7 +66,7 @@ export function Footer() {
             {nav.map((n) => (
               <li key={n.href}>
                 <Link
-                  className="transition-colors hover:text-white"
+                  className="transition-colors hover:text-ember"
                   href={n.href}
                 >
                   {n.label}
@@ -83,7 +83,7 @@ export function Footer() {
             {products.map((p) => (
               <li key={p.title}>
                 <Link
-                  className="transition-colors hover:text-white"
+                  className="transition-colors hover:text-ember"
                   href="/products"
                 >
                   {p.title}
@@ -104,7 +104,7 @@ export function Footer() {
             <li className="flex gap-2">
               <Icon name="mail" size={16} className="mt-0.5 shrink-0" />
               <a
-                className="break-all transition-colors hover:text-white"
+                className="break-all transition-colors hover:text-ember"
                 href={`mailto:${site.email}`}
               >
                 {site.email}
@@ -113,7 +113,7 @@ export function Footer() {
             <li className="flex gap-2">
               <Icon name="phone" size={16} className="mt-0.5 shrink-0" />
               <a
-                className="transition-colors hover:text-white"
+                className="transition-colors hover:text-ember"
                 href={`tel:${site.phone.replace(/\s/g, "")}`}
               >
                 {site.phone}
@@ -137,7 +137,7 @@ export function Footer() {
             {legal.map((l) => (
               <li key={l.href}>
                 <Link
-                  className="transition-colors hover:text-white"
+                  className="transition-colors hover:text-ember"
                   href={l.href}
                 >
                   {l.label}
