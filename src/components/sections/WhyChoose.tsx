@@ -6,13 +6,18 @@ import { why } from "@/lib/site";
 
 export function WhyChoose() {
   return (
-    <section className="section-y border-b border-leaf/10 bg-leaf-soft">
+    <section className="section-y bg-leaf-soft">
       <div className="container-page">
         <div className="grid items-center gap-8 rounded-3xl lg:grid-cols-[1fr_1fr]">
           <Reveal y={24}>
             <SectionHeading
               eyebrow="Our Difference"
-              title="Why Choose R3R NextGen"
+              eyebrowColor="text-leaf"
+              title={
+                <>
+                  Why Choose <span className="text-leaf">R3R NextGen</span>
+                </>
+              }
               text="We combine sustainability, safety, innovation and manufacturing expertise to create meaningful products for children."
             />
           </Reveal>

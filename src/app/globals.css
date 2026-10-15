@@ -112,6 +112,16 @@ h3 {
 @utility btn-ghost {
   @apply btn bg-transparent text-leaf-dark hover:bg-leaf-soft;
 }
+
+@utility btn-leaf {
+  @apply btn bg-leaf text-white hover:bg-leaf-dark;
+}
+
+/* Leaf green outline */
+@utility btn-leaf-outline {
+  @apply btn border border-leaf bg-transparent text-leaf hover:bg-leaf hover:text-white;
+}
+
 @utility card {
   @apply rounded-(--radius-card) bg-white shadow-soft;
 }

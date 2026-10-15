@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { SectionHeading } from "../ui/SectionHeading";
-import Icon  from "../ui/Icon";
+import Icon from "../ui/Icon";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
 import { process } from "@/lib/site";
@@ -30,7 +30,11 @@ export function ProcessSteps() {
         <Reveal y={24}>
           <SectionHeading
             eyebrow="Our Process"
-            title="From Concept to Creation"
+            title={
+              <>
+                From Concept <span className="text-ember">to Creation</span>
+              </>
+            }
             text="A structured product development and manufacturing process to ensure quality, safety and innovation."
           />
         </Reveal>
@@ -40,10 +44,7 @@ export function ProcessSteps() {
             <RevealItem key={step.title} className="relative h-full min-w-0">
               <li className="relative flex h-full w-full flex-col items-center gap-3 text-center">
                 <span className="grid size-14 shrink-0 place-items-center rounded-full border-2 border-ember/30 bg-white text-ember shadow-soft sm:size-16 lg:size-20">
-                  <Icon
-                    name={step.icon}
-                    className="size-8 lg:size-9"
-                  />
+                  <Icon name={step.icon} className="size-8 lg:size-9" />
                 </span>
 
                 <span className="max-w-full text-xs font-semibold leading-snug sm:text-sm">

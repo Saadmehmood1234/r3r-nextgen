@@ -14,7 +14,9 @@ type ButtonVariant =
   | "muted"
   | "on-dark"
   | "on-dark-outline"
-  | "ghost";
+  | "ghost"
+  | "leaf"
+  | "leaf-outline";
 
 type Props = {
   href: string;
@@ -36,6 +38,8 @@ const variantClasses: Record<ButtonVariant, string> = {
   muted: "btn-muted",
   "on-dark": "btn-on-dark",
   "on-dark-outline": "btn-on-dark-outline",
+  leaf: "btn-leaf",
+  "leaf-outline": "btn-leaf-outline",
   ghost: "btn-ghost",
 };
 
@@ -47,12 +51,9 @@ export function Button({
   className = "",
 }: Props) {
   return (
-    <Link
-      href={href}
-      className={`${variantClasses[variant]} ${className}`}
-    >
+    <Link href={href} className={`${variantClasses[variant]} ${className}`}>
       {children}
-      {arrow && <Icon size={16} name="arrow"  />}
+      {arrow && <Icon size={16} name="arrow" />}
     </Link>
   );
 }

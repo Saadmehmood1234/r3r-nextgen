@@ -45,7 +45,7 @@ export function AboutSection() {
             <SectionHeading
               title={
                 <>
-                  About <span className="text-ember">R3R NextGen</span>
+                  About <span className="text-leaf">R3R NextGen</span>
                 </>
               }
               text={
@@ -74,7 +74,7 @@ export function AboutSection() {
 
             <Reveal y={12} delay={0.15}>
               <div className="mt-7">
-                <Button href="/about" variant="outline">
+                <Button href="/about" variant="leaf-outline">
                   Know More About Us
                 </Button>
               </div>

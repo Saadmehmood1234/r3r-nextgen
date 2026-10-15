@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { Button } from "../ui/Button";
 import { Media } from "../ui/Media";
-import  Icon  from "../ui/Icon";
+import Icon from "../ui/Icon";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
@@ -45,13 +45,19 @@ export function ManufacturingSection() {
 
           <SectionHeading
             eyebrow="Manufacturing Excellence"
-            title="Modern Manufacturing for a Brighter Tomorrow"
+            eyebrowColor="text-leaf"
+            title={
+              <>
+                Modern Manufacturing for a{" "}
+                <span className="text-leaf">Brighter Tomorrow</span>
+              </>
+            }
             textColor="text-gray-900"
             text="Modern facilities, skilled workforce and scalable processes to deliver high-quality wooden toys and children's furniture for domestic and global markets."
           />
 
           <Reveal y={12} delay={0.15} className="mt-6">
-            <Button href="/manufacturing" variant="primary">
+            <Button href="/manufacturing" variant="leaf">
               Our Manufacturing Capabilities
             </Button>
           </Reveal>

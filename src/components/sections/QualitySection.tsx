@@ -9,11 +9,7 @@ export function QualitySection() {
   return (
     <section className="overflow-hidden bg-leaf-soft">
       <div className="grid items-center lg:grid-cols-[1fr_1.6fr]">
-        <Reveal
-          x={-28}
-          y={0}
-          className="h-full min-w-0"
-        >
+        <Reveal x={-28} y={0} className="h-full min-w-0">
           <Media
             src="home/sustainability.jpg"
             alt="Hands planting a seedling"
@@ -25,7 +21,11 @@ export function QualitySection() {
             <SectionHeading
               eyebrow="A Responsible Tomorrow"
               eyebrowColor="text-leaf"
-              title="Quality & Sustainability"
+              title={
+                <>
+                  Quality & <span className="text-leaf">Sustainability</span>
+                </>
+              }
               titleColor="text-leaf-dark"
               text="Built on stringent quality standards and a strong commitment to sustainable materials, responsible manufacturing and eco-friendly packaging for a healthier planet."
               textColor="text-leaf-dark"

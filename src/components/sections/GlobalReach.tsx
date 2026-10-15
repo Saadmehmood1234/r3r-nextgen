@@ -21,7 +21,11 @@ export function GlobalReach() {
             <Reveal y={24}>
               <SectionHeading
                 eyebrow="Across Markets"
-                title="From India to the World"
+                title={
+                  <>
+                    From India to <span className="text-ember">the World</span>
+                  </>
+                }
                 text="Serving domestic markets and international buyers with scalable and export-ready manufacturing."
               />
             </Reveal>

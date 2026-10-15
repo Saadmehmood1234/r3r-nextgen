@@ -26,17 +26,19 @@ import Icon from "./Icon";
 export function IconTile({
   icon,
   title,
+  iconColor="text-leaf",
   className = "",
 }: {
   icon: string;
   title: string;
   className?: string;
+  iconColor?:string
 }) {
   return (
     <div
       className={`flex flex-col items-center justify-center gap-2 rounded-xl bg-white/60 p-3 text-center ${className}`}
     >
-      <span className="text-leaf">
+      <span className={`${iconColor}`}>
         <Icon name={icon} className="h-7 w-7" />
       </span>
       <span className="text-[11px] font-semibold leading-tight text-ink">

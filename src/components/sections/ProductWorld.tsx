@@ -11,13 +11,17 @@ type ProductWorldProps = {
 
 export function ProductWorld({ showCta = true }: ProductWorldProps) {
   return (
-    <section className="section-y border-b border-pink-200/60 bg-cream">
+    <section className="section-y bg-cream">
       <div className="container-page">
         <div className="flex flex-col justify-start gap-4 md:flex-row md:items-end md:justify-between">
           <Reveal y={24} className="min-w-0 flex-1">
             <SectionHeading
               eyebrow="Our Collection"
-              title="Our Product World"
+              title={
+                <>
+                  Our <span className="text-ember">Product World</span>
+                </>
+              }
               text="A thoughtfully curated range of wooden toys and children's furniture that inspire learning, creativity and active play."
             />
           </Reveal>

@@ -16,7 +16,12 @@ export function OemSection() {
               <Reveal y={24}>
                 <SectionHeading
                   eyebrow="Your Brand. Our Expertise"
-                  title="OEM & White Label Manufacturing"
+                  title={
+                    <>
+                      OEM & White{" "}
+                      <span className="text-ember">Label Manufacturing</span>
+                    </>
+                  }
                   text="Custom product development, private label manufacturing and bulk supply for brands, retailers and institutional buyers."
                 />
               </Reveal>
@@ -30,7 +35,7 @@ export function OemSection() {
             <RevealGroup className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
               {oem.map((item) => (
                 <RevealItem key={item.title}>
-                  <IconTile {...item} className="h-full min-h-25" />
+                  <IconTile {...item} iconColor="text-ember" className="h-full min-h-25" />
                 </RevealItem>
               ))}
             </RevealGroup>
