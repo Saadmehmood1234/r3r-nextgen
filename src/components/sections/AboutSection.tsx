@@ -12,7 +12,6 @@ export function AboutSection() {
   return (
     <section className="bg-[#F8F3E9]">
       <div className="grid grid-cols-1 items-stretch lg:gap-8 lg:grid-cols-2 ">
-        {/* About images */}
         <Reveal x={-32} y={0} className="min-w-0">
           <Media
             src="home/about1.png"
@@ -25,8 +24,6 @@ export function AboutSection() {
             className="xl:hidden lg:block hidden aspect-4/3 rounded-r-2xl"
           />
         </Reveal>
-
-        {/* About content */}
         <Reveal
           y={24}
           delay={0.12}
@@ -62,8 +59,6 @@ export function AboutSection() {
                 </>
               }
             />
-
-            {/* Staggered feature pills */}
             <RevealGroup className="mt-6 flex flex-wrap gap-5">
               {aboutPills.map((pill) => (
                 <RevealItem key={pill.title}>

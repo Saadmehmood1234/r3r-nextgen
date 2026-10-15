@@ -36,8 +36,6 @@ export function CtaBanner() {
           </Reveal>
         </div>
       </BackgroundImage>
-
-      {/* Mobile CTA */}
       <BackgroundImage
         src="cta-mobile.png"
         alt="Child playing with a wooden aeroplane"

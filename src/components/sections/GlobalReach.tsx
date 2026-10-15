@@ -10,7 +10,6 @@ import { markets } from "@/lib/site";
 export function GlobalReach() {
   return (
     <section className="section-y pb-0 lg:py-0">
-      {/* Desktop global reach */}
       <BackgroundImage
         src="global2.png"
         alt="Globe with cargo trucks and shipping containers"
@@ -52,8 +51,6 @@ export function GlobalReach() {
           </div>
         </div>
       </BackgroundImage>
-
-      {/* Mobile global reach */}
       <div className="container-page w-full lg:hidden">
         <div className="w-full max-w-xl">
           <Reveal y={24}>
@@ -88,8 +85,6 @@ export function GlobalReach() {
           </RevealGroup>
         </div>
       </div>
-
-      {/* Mobile image */}
       <Reveal y={20} className="mt-8 lg:hidden">
         <Media
           src="home/global-mobile1.png"

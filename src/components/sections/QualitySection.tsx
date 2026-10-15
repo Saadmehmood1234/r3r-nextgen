@@ -9,7 +9,6 @@ export function QualitySection() {
   return (
     <section className="overflow-hidden bg-leaf-soft">
       <div className="grid items-center lg:grid-cols-[1fr_1.6fr]">
-        {/* Sustainability image */}
         <Reveal
           x={-28}
           y={0}
@@ -21,8 +20,6 @@ export function QualitySection() {
             className="aspect-5/3 h-full"
           />
         </Reveal>
-
-        {/* Quality and sustainability content */}
         <div className="px-6 py-12 md:px-12">
           <Reveal y={24}>
             <SectionHeading
@@ -34,12 +31,10 @@ export function QualitySection() {
               textColor="text-leaf-dark"
             />
           </Reveal>
-
-          {/* Staggered quality tiles */}
           <RevealGroup className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {quality.map((item) => (
               <RevealItem key={item.title}>
-                <IconTile {...item} className="h-full min-h-[100px]" />
+                <IconTile {...item} className="h-full min-h-25" />
               </RevealItem>
             ))}
           </RevealGroup>

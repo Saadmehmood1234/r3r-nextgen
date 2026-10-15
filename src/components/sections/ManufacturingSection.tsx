@@ -25,8 +25,6 @@ export function ManufacturingSection() {
             className="hidden aspect-4/3 lg:block xl:hidden rounded-r-2xl"
           />
         </Reveal>
-
-        {/* Right content */}
         <Reveal
           y={24}
           delay={0.12}
@@ -57,8 +55,6 @@ export function ManufacturingSection() {
               Our Manufacturing Capabilities
             </Button>
           </Reveal>
-
-          {/* Staggered manufacturing highlights */}
           <RevealGroup className="mt-8 flex flex-wrap gap-6">
             {mfgPoints.map((point) => (
               <RevealItem key={point.title}>

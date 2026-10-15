@@ -12,7 +12,6 @@ export function OemSection() {
       <div className="container-page lg:mr-0 lg:max-w-none lg:pl-[max(2rem,calc((100vw-80rem)/2))] lg:pr-0">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.6fr_1.4fr] xl:grid-cols-[2.3fr_0.7fr]">
           <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.1fr]">
-            {/* Heading and CTA */}
             <div className="min-w-0">
               <Reveal y={24}>
                 <SectionHeading
@@ -28,18 +27,14 @@ export function OemSection() {
                 </div>
               </Reveal>
             </div>
-
-            {/* OEM service tiles */}
             <RevealGroup className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
               {oem.map((item) => (
                 <RevealItem key={item.title}>
-                   <IconTile {...item} className="h-full min-h-[100px]" />
+                  <IconTile {...item} className="h-full min-h-25" />
                 </RevealItem>
               ))}
             </RevealGroup>
           </div>
-
-          {/* OEM image */}
           <Reveal x={28} y={0} className="min-w-0">
             <Media
               src="oem.png"

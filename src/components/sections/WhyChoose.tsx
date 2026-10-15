@@ -20,7 +20,7 @@ export function WhyChoose() {
           <RevealGroup className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {why.map((item) => (
               <RevealItem key={item.title}>
-                <IconTile {...item} className="h-full min-h-[100px]" />
+                <IconTile {...item} className="h-full min-h-25" />
               </RevealItem>
             ))}
           </RevealGroup>
