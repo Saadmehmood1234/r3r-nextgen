@@ -14,12 +14,12 @@ export function AboutSection() {
       <div className="grid grid-cols-1 items-stretch lg:gap-8 lg:grid-cols-2 ">
         <Reveal x={-32} y={0} className="min-w-0">
           <Media
-            src="home/about1.png"
+            src="home/about2.png"
             alt="Child building with wooden toy trains"
             className="xl:block lg:hidden block 2xl:aspect-2/1 aspect-3/2 lg:rounded-r-2xl"
           />
           <Media
-            src="home/about.png"
+            src="home/about2.png"
             alt="Child building with wooden toy trains"
             className="xl:hidden lg:block hidden aspect-4/3 rounded-r-2xl"
           />

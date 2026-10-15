@@ -133,7 +133,6 @@ export function Footer() {
             © {new Date().getFullYear()} R3R NEXTGEN (OPC) PRIVATE LIMITED. All
             rights reserved.
           </p>
-
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             {legal.map((l) => (
               <li key={l.href}>
@@ -147,6 +146,8 @@ export function Footer() {
             ))}
           </ul>
         </div>
+
+        <p className="container-page w-full md:text-start text-center text-xs">Design and Developed by Teknovia Technologies Pvt. Ltd.</p>
       </div>
     </BackgroundImage>
   );

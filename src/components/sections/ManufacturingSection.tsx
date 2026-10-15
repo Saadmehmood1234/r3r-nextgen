@@ -13,16 +13,26 @@ export function ManufacturingSection() {
     <section className="overflow-hidden">
       <div className="grid grid-cols-1 items-stretch lg:gap-8 lg:grid-cols-2 ">
         <Reveal x={-28} y={0} className="min-w-0">
-          <Media
-            src="manufacturing1.png"
+          {/* <Media
+            src="home/manufacturing.png"
             alt="Craftsman working in the R3R NextGen workshop"
             className="block aspect-2/1 lg:hidden xl:block lg:rounded-r-2xl xl:aspect-auto xl:min-h-full"
           />
 
           <Media
-            src="manufacturing.png"
+            src="home/manufacturing.png"
             alt="Craftsman working in the R3R NextGen workshop"
             className="hidden aspect-4/3 lg:block xl:hidden rounded-r-2xl"
+          /> */}
+          <Media
+            src="home/manufacturing.png"
+            alt="Craftsman working in the R3R NextGen workshop"
+            className="aspect-5/3 2xl:hidden block k lg:rounded-r-2xl"
+          />
+          <Media
+            src="home/manufacturing1.png"
+            alt="Craftsman working in the R3R NextGen workshop"
+            className="aspect-2/1 2xl:block hidden k lg:rounded-r-2xl"
           />
         </Reveal>
         <Reveal
