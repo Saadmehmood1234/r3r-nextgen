@@ -46,7 +46,7 @@ export default function ContactPage() {
   return (
     <BackgroundImage
       as="section"
-      src="contact/contact-hero.png"
+      src="contact/factory.jpeg"
       alt="R3R NextGen factory building"
       priority
       overlay="light-left"
