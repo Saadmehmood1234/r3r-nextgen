@@ -145,7 +145,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-wrap items-center gap-4 pt-1">
-        <button type="submit" disabled={pending} className="btn-primary px-8">
+        <button type="submit" disabled={pending} className="btn-primary px-8 cursor-pointer">
           {pending ? "Sending…" : "Send Message"}
           {!pending && <Icon name="arrow" size={16} />}
         </button>
