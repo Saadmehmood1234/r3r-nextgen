@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import Icon from "./Icon";
 
-type ButtonVariant =
+export type ButtonVariant =
   | "primary"
   | "outline"
   | "light"

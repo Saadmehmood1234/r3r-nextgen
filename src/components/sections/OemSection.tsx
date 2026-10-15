@@ -9,7 +9,7 @@ import { oem } from "@/lib/site";
 export function OemSection() {
   return (
     <section className="section-y overflow-hidden bg-red-soft lg:pr-0">
-      <div className="container-page lg:mr-0 lg:max-w-none lg:pl-[max(2rem,calc((100vw-80rem)/2))] lg:pr-0">
+      <div className="container-page lg:mr-0 lg:max-w-none lg:pl-[max(2rem,calc((100vw-86rem)/2))] lg:pr-0">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.6fr_1.4fr] xl:grid-cols-[2.3fr_0.7fr]">
           <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.1fr]">
             <div className="min-w-0">

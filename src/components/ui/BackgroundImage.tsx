@@ -134,7 +134,7 @@ type Props = {
 
 const overlays: Record<Overlay, string> = {
   none: "",
-  dark: "md:bg-black/35 bg-black/70",
+  dark: "lg:bg-black/25 bg-black/70",
   light: "bg-white/60",
   left: "bg-linear-to-r from-leaf-dark/85 via-leaf-dark/40 to-transparent",
   "light-left": "bg-linear-to-r from-cream/95 via-cream/70 to-transparent",

@@ -12,7 +12,7 @@ import { CtaBanner } from "@/components/sections/CtaBanner";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero/>
       <AboutSection />
       <ProductWorld />
       <WhyChoose />

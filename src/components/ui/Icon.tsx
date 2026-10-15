@@ -28,6 +28,7 @@ import {
   Heart,
   MapPin,
   Mail,
+  Mountain,
   Phone,
   ArrowRight,
   Menu,
@@ -74,6 +75,7 @@ const map: Record<string, ComponentType<LucideProps>> = {
   handshake: Handshake,
   clock: Clock,
   external: ExternalLink,
+  mountain:Mountain,
 };
 
 export default function Icon({

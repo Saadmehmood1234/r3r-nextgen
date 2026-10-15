@@ -1,24 +1,29 @@
-import { pageMeta } from "@/lib/seo";
-import { PageHero } from "@/components/sections/PageHero";
-import { AboutSection } from "@/components/sections/AboutSection";
-import { WhyChoose } from "@/components/sections/WhyChoose";
+import type { Metadata } from "next";
+import WhyPartner from "@/components/pages/about/WhyPartner";
+import QualityAndCertificate from "@/components/pages/about/QualityAndCertificate";
+import OurStory from "@/components/pages/about/OurStory";
+import ManagementMessage from "@/components/pages/about/ManagementMessage";
+import CoreValues from "@/components/pages/about/CoreValues";
+import AboutHero from "@/components/pages/about/Hero";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-export const metadata = pageMeta(
-  "About Us",
-  "Learn about R3R NextGen, our story, vision, mission and values in sustainable wooden toy manufacturing.",
-  "/about",
-);
 
-export default function Page() {
+export const metadata: Metadata = {
+  title: "About Us | R3R NextGen",
+  description:
+    "R3R Next Gen (OPC) Private Limited manufactures high-quality wooden toys and children's furniture that are safe, sustainable and thoughtfully designed.",
+};
+
+export default function AboutPage() {
   return (
     <>
-      <PageHero
-        title="About R3R NextGen"
-        text="A sustainable manufacturing business dedicated to wooden toys and children's furniture."
-      />
-      <AboutSection />
-      <WhyChoose />
-      <CtaBanner />
+      <AboutHero />
+      <OurStory />
+      <CoreValues />
+      <ManagementMessage />
+
+      <WhyPartner />
+      <QualityAndCertificate />
+      <CtaBanner/>
     </>
   );
 }
