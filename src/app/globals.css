@@ -43,7 +43,7 @@ h3 {
 
 /* Tailwind v4: reusable classes must be @utility so they can be @apply'd and take variants */
 @utility container-page {
-  @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  @apply mx-auto w-full max-w-[90rem] px-5 sm:px-8;
 }
 @utility section-y {
   @apply py-8 md:py-12;

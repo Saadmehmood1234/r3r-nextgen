@@ -13,7 +13,7 @@ export function AboutSection() {
     <section className="bg-[#F8F3E9]">
       <div className="grid grid-cols-1 items-stretch lg:gap-8 lg:grid-cols-2 ">
         <Reveal x={-32} y={0} className="min-w-0">
-          <Media
+          {/* <Media
             src="home/about2.png"
             alt="Child building with wooden toy trains"
             className="xl:block lg:hidden block 2xl:aspect-2/1 aspect-3/2 lg:rounded-r-2xl"
@@ -22,6 +22,11 @@ export function AboutSection() {
             src="home/about2.png"
             alt="Child building with wooden toy trains"
             className="xl:hidden lg:block hidden aspect-4/3 rounded-r-2xl"
+          /> */}
+          <Media
+            src="home/about2.png"
+            alt="Child building with wooden toy trains"
+            className="aspect-3/2 xl:aspect-5/3  lg:rounded-r-2xl"
           />
         </Reveal>
         <Reveal
@@ -50,12 +55,17 @@ export function AboutSection() {
               }
               text={
                 <>
-                  We are building a sustainable manufacturing business dedicated
-                  to wooden toys and children&apos;s furniture. Our focus is on
-                  creating safe, biodegradable, innovative and screen-free
-                  products supported by modern manufacturing practices and
-                  stringent quality standards, for families and markets across
-                  the world.
+                  <strong>R3R NEXTGEN (OPC) PRIVATE LIMITED</strong> is a
+                  sustainable Indian manufacturer of wooden toys and children’s
+                  furniture, focused on creating safe, eco-friendly, innovative,
+                  and screen-free products. Our focus on product development,
+                  quality, regulatory compliance, and scalable manufacturing
+                  enables us to serve both Indian and global markets. We offer
+                  direct supply, retail, OEM, and white-label manufacturing
+                  solutions for businesses and brands. With sustainability and
+                  responsible manufacturing at our core, we aim to build a
+                  trusted Indian wooden toy and children’s furniture brand for
+                  global markets.
                 </>
               }
             />

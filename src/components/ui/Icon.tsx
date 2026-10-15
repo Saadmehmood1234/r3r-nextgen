@@ -12,6 +12,10 @@ import {
   PenTool,
   Brain,
   Box,
+  MessageCircle,
+  Handshake,
+  Clock,
+  ExternalLink,
   CheckCircle2,
   Factory,
   Package,
@@ -64,11 +68,18 @@ const map: Record<string, ComponentType<LucideProps>> = {
   phone: Phone,
   arrow: ArrowRight,
   menu: Menu,
-  packageCheck:PackageCheck,
+  packageCheck: PackageCheck,
   close: X,
+  message: MessageCircle,
+  handshake: Handshake,
+  clock: Clock,
+  external: ExternalLink,
 };
 
-export default function Icon({ name, ...props }: { name: string } & LucideProps) {
+export default function Icon({
+  name,
+  ...props
+}: { name: string } & LucideProps) {
   const C = map[name] ?? Leaf;
   return <C aria-hidden {...props} />;
 }

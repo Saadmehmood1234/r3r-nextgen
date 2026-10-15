@@ -38,7 +38,7 @@ export function SectionHeading({
       </Reveal>
       {text && (
         <Reveal y={16} delay={0.1}>
-          <p className={`mt-3 max-w-xl text-sm md:text-base ${textColor}`}>
+          <p className={`mt-3 max-w-2xl text-sm md:text-base ${textColor}`}>
             {text}
           </p>
         </Reveal>
