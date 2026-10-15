@@ -1,6 +1,6 @@
 import { Button } from "../ui/Button";
 import { BackgroundImage } from "../ui/BackgroundImage";
-import { Icon } from "../ui/Icon";
+import Icon  from "../ui/Icon";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 import { heroFeatures } from "@/lib/site";
 
@@ -69,7 +69,7 @@ export function Hero() {
           <RevealItem key={feature.title}>
             <div className="flex items-center gap-3">
               <span className="grid size-11 shrink-0 place-items-center rounded-full bg-leaf-soft text-leaf">
-                <Icon name={feature.icon} size={28} />
+                <Icon name={feature.icon} />
               </span>
 
               <div>

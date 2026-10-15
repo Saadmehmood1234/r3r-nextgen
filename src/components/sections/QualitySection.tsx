@@ -39,11 +39,7 @@ export function QualitySection() {
           <RevealGroup className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {quality.map((item) => (
               <RevealItem key={item.title}>
-                <IconTile
-                  iconSize={36}
-                  item={item}
-                  iconBgColor="bg-white/60"
-                />
+                <IconTile {...item} className="h-full min-h-[100px]" />
               </RevealItem>
             ))}
           </RevealGroup>

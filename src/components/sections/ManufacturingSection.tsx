@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { Button } from "../ui/Button";
 import { Media } from "../ui/Media";
-import { Icon } from "../ui/Icon";
+import  Icon  from "../ui/Icon";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 

@@ -27,6 +27,7 @@ import {
   Phone,
   ArrowRight,
   Menu,
+  PackageCheck,
   X,
   type LucideProps,
   Hammer,
@@ -63,10 +64,11 @@ const map: Record<string, ComponentType<LucideProps>> = {
   phone: Phone,
   arrow: ArrowRight,
   menu: Menu,
+  packageCheck:PackageCheck,
   close: X,
 };
 
-export function Icon({ name, ...props }: { name: string } & LucideProps) {
+export default function Icon({ name, ...props }: { name: string } & LucideProps) {
   const C = map[name] ?? Leaf;
   return <C aria-hidden {...props} />;
 }

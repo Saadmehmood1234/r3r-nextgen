@@ -33,11 +33,7 @@ export function OemSection() {
             <RevealGroup className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
               {oem.map((item) => (
                 <RevealItem key={item.title}>
-                  <IconTile
-                    iconSize={32}
-                    iconBgColor="bg-[#FFF9F9]"
-                    item={item}
-                  />
+                   <IconTile {...item} className="h-full min-h-[100px]" />
                 </RevealItem>
               ))}
             </RevealGroup>

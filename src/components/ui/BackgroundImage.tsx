@@ -17,11 +17,12 @@ type Props = {
   align?: "start" | "center" | "end";
   as?: "div" | "section" | "footer";
   imagePosition?: string;
+  imageMode?: "cover" | "fixed-right";
 };
 
 const overlays: Record<Overlay, string> = {
   none: "",
-  dark: "bg-black/25",
+  dark: "md:bg-black/35 bg-black/70",
   light: "bg-white/60",
   left: "bg-linear-to-r from-leaf-dark/85 via-leaf-dark/40 to-transparent",
   "light-left": "bg-linear-to-r from-cream/95 via-cream/70 to-transparent",
@@ -56,6 +57,7 @@ export function BackgroundImage({
   align = "start",
   as: Tag = "div",
   imagePosition = "center",
+  imageMode = "cover",
 }: Props) {
   return (
     <Tag
@@ -72,7 +74,6 @@ export function BackgroundImage({
           className="-z-20 object-cover md:hidden"
         />
       )}
-
       <Image
         src={`/images/${src}`}
         alt={mobileSrc ? "" : alt}
@@ -80,24 +81,24 @@ export function BackgroundImage({
         sizes={sizes}
         priority={priority}
         aria-hidden={mobileSrc ? true : undefined}
-        style={{ objectPosition: imagePosition }}
+        style={{
+          objectPosition:
+            imagePosition === "right center" ? "right center" : imagePosition,
+        }}
         className={`-z-20 object-cover ${mobileSrc ? "hidden md:block" : ""}`}
       />
-
       {mobileOverlay !== undefined && (
         <div
           aria-hidden="true"
           className={`pointer-events-none absolute inset-0 -z-10 ${mobileOverlays[mobileOverlay]}`}
         />
       )}
-
       {overlay !== "none" && (
         <div
           aria-hidden="true"
           className={`pointer-events-none absolute inset-0 -z-10 ${overlays[overlay]}`}
         />
       )}
-
       <div
         className={`relative z-10 flex h-full flex-col justify-center gap-3 p-6 md:p-10 ${aligns[align]}`}
       >

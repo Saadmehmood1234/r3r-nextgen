@@ -46,7 +46,7 @@ h3 {
   @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
 }
 @utility section-y {
-  @apply py-8 md:py-14;
+  @apply py-8 md:py-12;
 }
 /* Base */
 @utility btn {

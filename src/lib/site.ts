@@ -107,7 +107,7 @@ export const process: Item[] = [
   { icon: "check", title: "Testing" },
   { icon: "factory", title: "Manufacturing" },
   { icon: "settings", title: "Quality Control" },
-  { icon: "package", title: "Packaging" },
+  { icon: "packageCheck", title: "Packaging" },
 ];
 
 export const mfgPoints: Item[] = [

@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     template: `%s | ${site.short}`,
   },
   description: site.description,
+  icons: {
+    icon: "/icon.png",
+    // Optional: add these if the files exist
+    // apple: "/apple-touch-icon.png",
+  },
   keywords: [
     "wooden toys",
     "children's furniture",

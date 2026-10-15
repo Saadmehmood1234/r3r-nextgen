@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Media } from "./Media";
-import { Icon } from "./Icon";
+import Icon  from "./Icon";
 
 type ProductCardProps = {
   title: string;

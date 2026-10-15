@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Icon } from "./Icon";
+import Icon from "./Icon";
 
 type ButtonVariant =
   | "primary"
@@ -52,7 +52,7 @@ export function Button({
       className={`${variantClasses[variant]} ${className}`}
     >
       {children}
-      {arrow && <Icon name="arrow" size={16} />}
+      {arrow && <Icon size={16} name="arrow"  />}
     </Link>
   );
 }

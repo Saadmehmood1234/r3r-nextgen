@@ -5,13 +5,12 @@ import { Reveal } from "../ui/Reveal";
 export function CtaBanner() {
   return (
     <section className="text-white">
-      {/* Desktop CTA */}
       <BackgroundImage
         src="cta3.png"
         alt="Child playing with a wooden aeroplane"
-        overlay="none"
+        overlay="dark"
         sizes="100vw"
-        className="hidden min-h-100 items-center justify-center lg:flex 2xl:min-h-120"
+        className="hidden min-h-100 items-center justify-center lg:flex 2xl:min-h-100"
       >
         <div className="w-full max-w-xl lg:ml-[40%]">
           <Reveal y={24}>

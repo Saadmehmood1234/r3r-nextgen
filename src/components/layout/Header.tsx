@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav } from "@/lib/site";
-import { Icon } from "../ui/Icon";
+import Icon from "../ui/Icon";
 import { Logo } from "../ui/Logo";
 
 export function Header() {
@@ -37,7 +37,7 @@ export function Header() {
             aria-expanded={open}
             onClick={() => setOpen(!open)}
           >
-            <Icon name={open ? "close" : "menu"} size={26} />
+            <Icon name={open ? "close" : "menu"} />
           </button>
         </div>
       </div>
